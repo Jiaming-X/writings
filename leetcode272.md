@@ -7,7 +7,7 @@
 挺有意思的题目
 
 ```
-class {
+class solution {
 
 }
 
