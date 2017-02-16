@@ -2,9 +2,7 @@
 
 ### Create Maximum Numbmer
 
-题目链接：[https://leetcode.com/problems/create-maximum-number/](https://leetcode.com/problems/create-maximum-number/)
-
-
+题目链接：[https://leetcode.com/problems/create-maximum-number/](https://leetcode.com/problems/alien-dictionary/)
 
 ```java
 public class Solution {
