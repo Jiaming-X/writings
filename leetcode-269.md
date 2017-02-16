@@ -1,16 +1,16 @@
+### Leetcode 321.
 
+### Create Maximum Numbmer
 
-
+题目链接：[https://leetcode.com/problems/create-maximum-number/](https://leetcode.com/problems/create-maximum-number/)
 
 
 
 ```java
-
-
 public class Solution {
     Map<Character,Set<Character>> graph = new HashMap<>();
     Map<Character,Integer> indegreeMap = new HashMap<>();
-  
+
     public boolean buildGraph(String[] words) {
         //注意:不做这步的话之后找indegree为0的起点就找不到了,但不能在loop里做,因为像["w","wr"]会因为后者长度更短而还没看到r就停了使indegree为空
         for(String w:words){
@@ -20,7 +20,7 @@ public class Solution {
                 }
             }
         }
-        
+
         for (int i = 0; i < words.length-1; i++) {
             String cur = words[i];
             String next = words[i+1];
@@ -28,7 +28,7 @@ public class Solution {
             if (cur.length() > next.length() && cur.substring(0, next.length()).equals(next)) {
                 return false;
             }
-            
+
             // find first different char then add edge
             //由于有["wrtkj","wrt"]即前面相同的短的反而在后面的情况,使得这个order无法确定需要return 空
             //所以在forj完成后判断来排除
@@ -56,7 +56,7 @@ public class Solution {
         }
         return true;
     }    
-        
+
     public String alienOrder(String[] words) {
         if(words.length == 0) return "";
         if(words.length == 1) return words[0];
@@ -98,8 +98,6 @@ public class Solution {
     }
 }
 ```
-
-
 
 
 
