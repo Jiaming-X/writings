@@ -1,8 +1,8 @@
-### Leetcode 321.
+### Leetcode 269.
 
-### Create Maximum Numbmer
+### Alien Dictionary
 
-题目链接：[https://leetcode.com/problems/create-maximum-number/](https://leetcode.com/problems/alien-dictionary/)
+题目链接：[https://leetcode.com/problems/alien-dictionary/](https://leetcode.com/problems/alien-dictionary/)
 
 ```java
 public class Solution {
